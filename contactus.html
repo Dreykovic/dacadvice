@@ -96,12 +96,17 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="./index.html#about">
-                                        Qui sommes-nous ?
+                                        Qui sommes-nous
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./index.html#services">
                                         Services
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./projets.html">
+                                        Projets
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -380,7 +385,10 @@
                             <a href="./index.html#why">A propos</a>
                         </li>
                         <li>
-                            <a href="contactus.html">Nous contacter</a>
+                            <a href="./projets.html">Nos projets</a>
+                        </li>
+                        <li>
+                            <a href="./contactus.html">Nous contacter</a>
                         </li>
 
 
@@ -401,7 +409,7 @@
                     <i class="fab fa-facebook"></i>
                 </a>
             </li>
-          
+
             <li>
                 <a href="#" target="_blank">
                     <i class="fab fa-linkedin"></i>
@@ -439,13 +447,13 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault(); // Empêche l'envoi du formulaire par défaut
-    
+
             // Récupère les données du formulaire
             const formData = new FormData(event.target);
-    
+
             // Remplacez 'https://formspree.io/f/{votre_code}' par l'URL de votre API Formspree
             const formSpreeAPIURL = 'https://formspree.io/f/maygewvk';
-    
+
             // Envoie les données via Fetch à l'API Formspree
             fetch(formSpreeAPIURL, {
                 method: 'POST',
@@ -454,26 +462,26 @@
                 },
                 body: formData
             })
-            .then(response => response.json())
-            .then(data => {
-                // Affiche la réponse du serveur (optionnel)
-                if (data.ok) {
-                    // Affiche le modal de succès
-                    $('#successModal').modal('show');
-                    // Réinitialise le formulaire après la soumission réussie
-                    document.getElementById('contact-form').reset();
-                } else {
-                    // Affiche le modal d'erreur
-                    $('#errorModal').modal('show');
-                }
-            })
-            .catch(error => {
-                // Gère les erreurs (optionnel)
-                console.error('Erreur :', error);
-            });
+                .then(response => response.json())
+                .then(data => {
+                    // Affiche la réponse du serveur (optionnel)
+                    if (data.ok) {
+                        // Affiche le modal de succès
+                        $('#successModal').modal('show');
+                        // Réinitialise le formulaire après la soumission réussie
+                        document.getElementById('contact-form').reset();
+                    } else {
+                        // Affiche le modal d'erreur
+                        $('#errorModal').modal('show');
+                    }
+                })
+                .catch(error => {
+                    // Gère les erreurs (optionnel)
+                    console.error('Erreur :', error);
+                });
         });
     </script>
-    
+
 
 
 
