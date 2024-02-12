@@ -1385,6 +1385,18 @@ body{
 .fables-rounded{
     border-radius: 10px;
 }
+
+.fables-rounded-img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /*background-color: red;*/
+     border: 2px #7F1F9B solid; 
+    width: 400px;
+    height: 400px;
+}
 .fables-contact-icon { 
     margin-top: -25px; 
 }
