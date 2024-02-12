@@ -3176,11 +3176,14 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 	display:block;
 }
 /*responsive*/
- @media (min-width:767px){
+
+
+@media (min-width:767px){
 	.exo-menu > li > a{
 	display:block;
 	padding: 0 15px;
  }
+
 .mega-menu, .flyout-mega-wrap, .Images, .Blog,.flyout-right>ul,
 .flyout-left>ul, li.drop-down>ul{
 		position:absolute;
@@ -3193,7 +3196,11 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 }
  }
 @media (max-width:767px){
+    .fables-rounded-img{
 
+        width: 200px;
+        height: 200px;
+    }
 	.exo-menu {
 		min-height: 58px;
 		background-color: #23364B;
@@ -3219,6 +3226,15 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 }
 
 }
+@media (max-width:1000px){
+    .fables-rounded-img{
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+ }
 a.toggle-menu{
     position: absolute;
     right: 0px;
