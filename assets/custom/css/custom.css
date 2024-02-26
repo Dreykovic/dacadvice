@@ -1394,8 +1394,8 @@ body{
     -o-border-radius: 50%;
     /*background-color: red;*/
      border: 2px #7F1F9B solid; 
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
 }
 .fables-contact-icon { 
     margin-top: -25px; 
