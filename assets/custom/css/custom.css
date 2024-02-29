@@ -38,15 +38,19 @@ body{
     font-family: 'Open Sans', sans-serif;
     
 }
-.dac-main-content{
+body{
     
     margin: 0px 70px 0px 70px;
 }
-.fables-navigation {
+/* .dac-main-content{
+    
+    margin: 0px 70px 0px 70px;
+} */
+/* .fables-navigation {
     position: sticky ;
     z-index: 1000;
     background-color: #dedbe4d1 !important;
-}
+} */
 /* .fables-navigation .container .row .navs{
     position: sticky;
     z-index: 1000;
