@@ -40,7 +40,7 @@ body{
 }
 body{
     
-    margin: 0px 80px 0px 80px;
+    margin: 0px 0px 0px 0px;
 }
 /* .dac-main-content{
     
@@ -3201,6 +3201,10 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 
 
 @media (min-width:767px){
+    body{
+    margin: 0px 80px 0px 80px;
+
+    }
 	.exo-menu > li > a{
 	display:block;
 	padding: 0 15px;
@@ -3218,6 +3222,10 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 }
  }
 @media (max-width:767px){
+    body{
+    margin: 0px 10px 0px 10px;
+
+    }
     .fables-rounded-img{
 
         width: 200px;
@@ -3249,6 +3257,11 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 
 }
 @media (max-width:1000px){
+    body{
+    margin: 0px 0px 0px 0px;
+
+    }
+
     .fables-rounded-img{
         width: 200px;
         height: 200px;
