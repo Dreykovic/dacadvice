@@ -1,11 +1,11 @@
-$(document).ready(function() {
+$(document).ready(function () {
   "use strict";
   // wow
   new WOW({
     mobile: false
   }).init();
 
-  $(".fables-mega-menu li a").click(function() {
+  $(".fables-mega-menu li a").click(function () {
     $(".fables-mega-menu li > div").toggleClass("show-sub");
   });
 
@@ -55,20 +55,20 @@ $(document).ready(function() {
   });
 
   // START TOGGLE SEARCH
-  $(".open-search").click(function(e) {
+  $(".open-search").click(function (e) {
     e.preventDefault();
     $(".search-section").fadeIn("fast");
     $(".search-input").focus();
     $("body").css({ overflow: "hidden" });
   });
 
-  $(".close-search").click(function(e) {
+  $(".close-search").click(function (e) {
     e.preventDefault();
     $(".search-section").fadeOut("fast");
     $("body").css({ overflow: "visible" });
   });
 
-  $(document).keyup(function(e) {
+  $(document).keyup(function (e) {
     if (e.which == 27) {
       $(".search-section").fadeOut("fast");
       $("body").css({ overflow: "visible" });
@@ -159,7 +159,7 @@ $(document).ready(function() {
 
   var $input = $("#input-val");
   $input.val(1);
-  $(".calc-btn").click(function() {
+  $(".calc-btn").click(function () {
     if ($(this).hasClass("plus")) {
       $input.val(parseInt($input.val()) + 1);
     } else if ($input.val() >= 2) {
@@ -167,7 +167,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".fables-view-btn").click(function() {
+  $(".fables-view-btn").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
 
     if ($(this).hasClass("fables-list-btn")) {
@@ -189,10 +189,10 @@ $(document).ready(function() {
     }
   });
 
-  $("[data-countdown]").each(function() {
+  $("[data-countdown]").each(function () {
     var $this = $(this),
       finalDate = $(this).data("countdown");
-    $this.countdown(finalDate, function(event) {
+    $this.countdown(finalDate, function (event) {
       $this.html(
         event.strftime(
           '<div class="row"><div class="col-6 col-lg-3 mb-3 mb-lg-0 comming-soon-counter">%D <br> <span>Days</span></div>  <div class="col-6 col-lg-3 comming-soon-counter"> %H <br> <span>Hours</span> </div> <div class="col-6 col-lg-3 mb-3 mb-lg-0 comming-soon-counter">  %M <br> <span>Minutes</span></div> <div class="col-6 col-lg-3 mb-3 mb-lg-0 comming-soon-counter"> %S <br> <span>Seconds</span></div></div>'
@@ -226,7 +226,7 @@ $(document).ready(function() {
     .on("changed.owl.carousel", syncPosition);
 
   sync2
-    .on("initialized.owl.carousel", function() {
+    .on("initialized.owl.carousel", function () {
       sync2.find(".owl-item").eq(0).addClass("current");
     })
     .owlCarousel({
@@ -282,7 +282,7 @@ $(document).ready(function() {
     }
   }
 
-  sync2.on("click", ".owl-item", function(e) {
+  sync2.on("click", ".owl-item", function (e) {
     e.preventDefault();
     var number = $(this).index();
     sync1.data("owl.carousel").to(number, 300, true);
